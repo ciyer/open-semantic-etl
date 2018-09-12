@@ -11,6 +11,9 @@ pip3 install py2neo
 # install warcio
 pip3 install warcio
 
+# install tika
+pip3 install tika
+
 # start on boot
 update-rc.d opensemanticsearch defaults
 update-rc.d opensemanticsearch-filemonitoring defaults
