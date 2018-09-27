@@ -51,7 +51,7 @@ class filter_file_not_modified(object):
 			export = parameters['export']		
 			module = importlib.import_module(export)
 			objectreference = getattr(module, export)
-			exporter = objectreference()
+			exporter = objectreference(parameters['solr'], parameters['index'], self.verbose)
 
 			#get modtime from document saved in Index
 		
