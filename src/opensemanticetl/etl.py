@@ -102,6 +102,9 @@ class ETL(object):
 			
 			for content_type in content_types:
 	
+				if not content_type:
+					continue
+
 				# directory where the plugins' blacklist are
 				blacklistdir = '/etc/opensemanticsearch/blacklist/' + plugin + '/'
 	
