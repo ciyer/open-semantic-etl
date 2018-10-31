@@ -8,11 +8,11 @@ import urllib.parse
 
 # Export data to Solr
 class export_solr(object):
-	
-	def __init__(self, solr = 'http://localhost:8983/solr/', core = 'opensemanticsearch', verbose = False):
-	
+
+	def __init__(self, solr = 'http://solr:8983/solr/', core = 'opensemanticsearch', verbose = False):
+
 		self.verbose = verbose
-	
+
 		self.solr = solr
 		self.core = core
 
