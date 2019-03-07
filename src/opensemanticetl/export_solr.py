@@ -64,6 +64,9 @@ class export_solr(object):
 		for fieldname in data:
 			if fieldname == 'id':
 				update_fields['id'] = data['id']
+			elif fieldname == 'Creation-Date_ss' or fieldname == 'Last-Modified_ss':
+				# Gugerli -- Using 'set' prevents the year from being extracted from the data correctly
+				update_fields[fieldname] = data[fieldname]
 			else:
 				update_fields[fieldname] = {}
 
